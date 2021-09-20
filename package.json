@@ -18,10 +18,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/mdisprgm/test.git"
+        "url": "git+https://github.com/mdisprgm/bdsx-ping.git"
     },
-    "homepage": "https://github.com/mdisprgm/test#readme",
+    "homepage": "https://github.com/mdisprgm/bdsx-ping#readme",
     "bugs": {
-        "url": "https://github.com/mdisprgm/test/issues"
+        "url": "https://github.com/mdisprgm/bdsx-ping/issues"
     }
 }
