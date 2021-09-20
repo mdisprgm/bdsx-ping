@@ -1,0 +1,19 @@
+{
+    "name": "@bdsx/ping",
+    "version": "1.0.1",
+    "description": "Provides hooked functions about player's ping",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "bdsx",
+        "ping"
+    ],
+    "author": "mdisprgm",
+    "license": "ISC",
+    "bdsxPlugin": true,
+    "devDependencies": {
+        "bdsx": "file:../bdsx"
+    }
+}
