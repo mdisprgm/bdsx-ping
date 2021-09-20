@@ -10,6 +10,9 @@ command.register("ping", "get your ping").overload((params, origin) => {
     const ni = actor?.isPlayer() ? actor.getNetworkIdentifier() : undefined;
     if (ni) {
         CmdUtil.runCmd(
+            `tellraw ${actor?.getName()} {"rawtext":[{"text":"§e================"}]}`
+        );
+        CmdUtil.runCmd(
             `tellraw ${actor?.getName()} {"rawtext":[{"text":"Your last ping is §a${GetLastPing(
                 peer,
                 ni.address
@@ -26,6 +29,9 @@ command.register("ping", "get your ping").overload((params, origin) => {
                 peer,
                 ni.address
             )}§rms"}]}`
+        );
+        CmdUtil.runCmd(
+            `tellraw ${actor?.getName()} {"rawtext":[{"text":"§e================"}]}`
         );
     }
 }, {});
