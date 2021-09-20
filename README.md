@@ -2,4 +2,4 @@
 
 run `ping` command in the Server. (only players can use this command)
 
-![Example](./resource/example.png)
+![Example](https://github.com/mdisprgm/bdsx-ping/blob/main/resource/example.png?raw=true)
