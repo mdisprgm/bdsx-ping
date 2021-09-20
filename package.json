@@ -1,6 +1,6 @@
 {
     "name": "@bdsx/ping",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Provides hooked functions about player's ping",
     "main": "index.js",
     "scripts": {
@@ -15,5 +15,13 @@
     "bdsxPlugin": true,
     "devDependencies": {
         "bdsx": "file:../bdsx"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mdisprgm/test.git"
+    },
+    "homepage": "https://github.com/mdisprgm/test#readme",
+    "bugs": {
+        "url": "https://github.com/mdisprgm/test/issues"
     }
 }
