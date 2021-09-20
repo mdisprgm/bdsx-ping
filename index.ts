@@ -1,5 +1,5 @@
 import { events } from "bdsx/event";
 
 events.serverOpen.on(() => {
-    import("./command");
+    import("./src/command");
 });

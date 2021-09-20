@@ -1,6 +1,6 @@
 import { serverInstance } from "bdsx/bds/server";
 import { command } from "bdsx/command";
-import { CmdUtil } from "../../prv_utilities/command";
+import { CmdUtil } from "../../../prv_utilities/command";
 import { GetAveragePing, GetLastPing, GetLowestPing } from "./hacker";
 
 const peer = serverInstance.minecraft.getNetworkHandler().instance.peer;
