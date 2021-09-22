@@ -1,6 +1,6 @@
 {
     "name": "@bdsx/ping",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Provides hooked functions about player's ping",
     "main": "index.js",
     "scripts": {
