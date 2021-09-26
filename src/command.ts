@@ -1,6 +1,5 @@
 import { command } from "bdsx/command";
 import { CmdUtil } from "../utils/command";
-import { g_peer } from "./hacker";
 import { Ping } from "./pings";
 
 command.register("ping", "get your ping").overload((params, origin) => {

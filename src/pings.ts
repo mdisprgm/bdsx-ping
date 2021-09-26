@@ -1,21 +1,19 @@
 import { NetworkIdentifier } from "bdsx/bds/networkidentifier";
-import {
-    g_peer,
-    __GetAveragePing__,
-    __GetLastPing__,
-    __GetLowestPing__,
-} from "./hacker";
+
+import { serverInstance } from "bdsx/bds/server";
+
+export const g_peer = serverInstance.networkHandler.instance.peer;
 
 export namespace Ping {
     export function GetAveragePing(ni: NetworkIdentifier): number {
-        return __GetAveragePing__(g_peer, ni.address);
+        return g_peer.GetAveragePing(ni.address);
     }
 
     export function GetLastPing(ni: NetworkIdentifier): number {
-        return __GetLastPing__(g_peer, ni.address);
+        return g_peer.GetLastPing(ni.address);
     }
 
     export function GetLowestPing(ni: NetworkIdentifier): number {
-        return __GetLowestPing__(g_peer, ni.address);
+        return g_peer.GetLowestPing(ni.address)
     }
 }
