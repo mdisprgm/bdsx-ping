@@ -5,7 +5,7 @@ export namespace CmdUtil {
     export const runCmd = bedrockServer.executeCommand;
     export const runCmdOnConsole = bedrockServer.executeCommandOnConsole;
 
-    export function getPlayerByEntity(actor: Actor) {
+    export function getPlayerByEntity(actor: Actor): Player | undefined {
         return actor.isPlayer() ? actor : undefined;
     }
 
@@ -19,7 +19,7 @@ export namespace CmdUtil {
         }
         runCmd(`tellraw ${target.getName()} {"rawtext":[{"text":"${str}"}]}`);
     }
-    export function Log(str: string) {
-        console.log("[Feedback]", str.replace(/§(\w{1})|(\d{1})/g, ""));
+    export function Log(str: string, prefix = "Feedback") {
+        console.log(`[${prefix}]`, str.replace(/§(\w{1})|(\d{1})/g, ""));
     }
 }
