@@ -11,12 +11,8 @@ export namespace CmdUtil {
 
     export function Feedback(
         str: string,
-        target: Player | undefined = undefined,
-        log: boolean = true
+        target: Player | undefined = undefined
     ) {
-        if (log)
-            console.log("[Feedback]", str.replace(/§(\w{1})|(\d{1})/g, ""));
-
         if (!target) {
             runCmd(`say ${str}`);
             return;
