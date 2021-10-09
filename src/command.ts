@@ -2,7 +2,7 @@ import { command } from "bdsx/command";
 import { CmdUtil } from "../utils/command";
 import { Ping } from "./pings";
 
-command.register("ping", "get your ping").overload((params, origin) => {
+command.register("ping", "get your ping").overload(async (params, origin) => {
     const actor = origin.getEntity();
     const ni = actor?.isPlayer() ? actor.getNetworkIdentifier() : undefined;
     if (ni) {
