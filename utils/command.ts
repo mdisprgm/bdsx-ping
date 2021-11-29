@@ -1,12 +1,12 @@
 import { Actor } from "bdsx/bds/actor";
 import { Player } from "bdsx/bds/player";
 import { bedrockServer } from "bdsx/launcher";
-export namespace CmdUtil {
+export namespace MCCmd {
     export const run = bedrockServer.executeCommand;
     export const runOnConsole = bedrockServer.executeCommandOnConsole;
-    /**@deprecated use CmdUtil.run instead*/
+    /**@deprecated use MCCmd.run instead*/
     export const runCmd = run;
-    /**@deprecated use CmdUtil.runOnConsole instead*/
+    /**@deprecated use MCCmd.runOnConsole instead*/
     export const runCmdOnConsole = runOnConsole;
 
     export function getPlayerByEntity(actor: Actor): Player | undefined {
